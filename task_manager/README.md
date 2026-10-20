@@ -10,7 +10,14 @@ A task manager with a React/Vite frontend and an Express/MongoDB backend. Users 
 
 ## Configuration
 
-The backend reads its configuration from `backend/.env`. Keep the existing local file and values; do not commit it.
+The backend reads its configuration from `backend/.env`. Create it from the example:
+
+```bash
+cd backend
+cp .env.example .env
+```
+
+Set `MONGO_URI` and `JWT_SECRET` to your own values in `.env`. Never commit `.env`; it is ignored by Git.
 
 Required settings:
 
